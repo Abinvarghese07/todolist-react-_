@@ -24,7 +24,7 @@ const Homepage = () => {
     //Function to post data using axios
     const handleSubmit = async(event)=> {
         event.preventDefault()
-        await axios.post('https://todolist-backend-production-b4bd.up.railway.app/user',user)
+        await axios.post('https://todolist-backend-production-a1a8.up.railway.app/user',user)
 
     }
     

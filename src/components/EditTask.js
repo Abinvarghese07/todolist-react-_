@@ -28,14 +28,14 @@ const EditTask = () => {
     //Function to use Put method using axios
     const handleSubmit = async(event)=> {
         event.preventDefault()
-        await axios.put(`https://todolist-backend-production-b4bd.up.railway.app/user/${id}`,user)
+        await axios.put(`https://todolist-backend-production-a1a8.up.railway.app/user/${id}`,user)
         navigate('/')
 
     }
 
     //Function to get data from backend
     const getData = async () => {
-        const result = await axios.get('https://todolist-backend-production-b4bd.up.railway.app/users')
+        const result = await axios.get('https://todolist-backend-production-a1a8.up.railway.app/users')
         console.log(result.data)
         setUser(result.data)
     }

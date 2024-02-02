@@ -13,7 +13,7 @@ const Cards = () => {
     
     //Function to get data from backend using axios
     const getData = async () => {
-        const result = await axios.get('https://todolist-backend-production-b4bd.up.railway.app/users')
+        const result = await axios.get('https://todolist-backend-production-a1a8.up.railway.app/users')
         console.log(result.data)
         setData(result.data)
         setSearch(result.data)
@@ -25,7 +25,7 @@ const Cards = () => {
 
     //Delete data function using id as parameter 
     const handleDelete = async (id) => {
-        await axios.delete(`https://todolist-backend-production-b4bd.up.railway.app/user/${id}`)
+        await axios.delete(`https://todolist-backend-production-a1a8.up.railway.app/user/${id}`)
         getData()
     }
 
